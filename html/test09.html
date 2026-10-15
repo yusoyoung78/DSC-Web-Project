@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P태그 학습</title>
+    <style>
+    
+        p {
+            border: 1px solid black;
+        }
+
+        .r_name {
+            background-color: yellow;
+            color: blue;
+            padding: 5px 20px;
+            display: inline-block;
+            width: 120px;
+            border-radius: 10px;
+
+        }
+
+        .r_name:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .r_name1:hover {
+
+            color: red;
+            cursor: pointer;
+
+        }
+
+        .r_name2 {
+            background-color: red;
+            color: blue;
+            padding: 5px 20px;
+            display: inline-block;
+            width: 120px;
+            border-radius: 15px;
+            white-space: pre;
+
+        }
+
+        .r_name2:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML5의 문단태그: &lt;p&gt;</h1>
+    <p>이것은 첫 번째 문단입니다. <br>
+        p태그는 문장을 하나의 덩어리로 <br>
+        구분해주는 태그입니다.</p>
+    <p>문단은 자동으로 줄 바꿈이 되며, <br>
+        각 문단 사이에는 기본적으로 <br>
+        여백이 생깁니다.</p>
+    <p>스타일을 적용할 수도 있습니다.<span class="r_name">홍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;길&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동</span>
+        예를 들어 이 문장은 파랑색 굵은 글씨입니다.</p>
+
+    <p>스타일을 적용할 수도 있습니다.<span class="r_name">홍&ensp;&ensp;길&ensp;&ensp;동</span>
+        예를 들어 이 문장은 파랑색 굵은 글씨입니다.</p>
+
+    <p>스타일을 적용할 수도 있습니다.<span class="r_name2">홍    길     동</span>
+        예를 들어 이 문장은 파랑색 굵은 글씨입니다.</p> 
+
+    <p style="color: blue; font-weight: bolder;">스타일을 적용할 수도 있습니다.<br>
+        예를 들어 이 문장은 <span class="r_name1">빨강색</span> 굵은 글씨입니다.
+    </p>
+
+</body>
+
+</html>

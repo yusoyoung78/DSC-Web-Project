@@ -1,0 +1,73 @@
+!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>앵커 태그 2단계 - 다양한 링크</title>
+
+
+<style>
+  html{
+    scroll-behavior:smooth
+  }
+</style>
+
+</head>
+<body id="top">
+    <h1>앵커 태그 2단계: 다양한 링크 만들기</h1>
+
+    <!--①. 새 창 링크 + 보안 속성 rel~~ -->
+    <!--"target=_blank"를 적용할때 rel="noopener noreferrer"-->
+    <h2>① 새 창/ 현재 창 링크</h2>
+    <p>
+        <a href="https://www.google.com" target="_blank" rel="nooperner noreferrer">구글(새 창)</a>
+        <a href="https://www.google.com" target="_self" rel="nooperner noreferrer">구글(현재 창)</a>
+    </p>
+
+    <!--②. 메일보내기 : 제목(subject)과 본문(body)까지 미리 채우기-->
+    <!--띄어쓰기는 %20, 여러값은 &로 연결-->
+    <h2>② 메일 보내기: 제목(subject)과 본문(body)까지 미리 채우기</h2>
+    <p>
+        <a href="mail.yusoyoung78@gmail.com?subject=장수사과 구매 문의드립니다.&body=안녕하세요.고객님이 작성하고자 하는 수정 입력하세요!. " 
+        target="_blank" tile="장수사과 담당자 메일발송">사과 구매 문의 메일 보내기</a>
+    </p>
+
+    <!--③. 전화걸기: 스마트폰에서 누루면 전화 앱이 열림-->
+    <h2>③ 전화 걸기</h2>
+    <p>
+        <a href="tel:010-3361/7320" title="장수사과 담당자 연결">담당자 연결 010-3361-7320</a>
+    </p>
+    <!--④ 같은 폴더에 다른 HTML 파일로 이동(상대경로)-->
+    <h2>④ 내 사이트에 다른 패이지로 이동</h2>
+    <p>
+        <a href="/html/test09-3.html" target="_blank"title="📰9-3 뉴스 페이지 이동">9딘계 뉴스컬럼 페이지 이동</a>
+    </p>
+    
+    <!--⑤. 이미지 링크 걸기: a태그 안에 img 넣기-->
+    <h2>⑤ 이미지 링크</h2>
+    <p>
+        <a href="https://www.naver.com"  target="_blank" rel="nooperner noreferrer" alt="네이버 이동" title="네이버로 이동">
+            <img src="https://placehold.co/300x100?text=NAVER"alt="네이버 이동"/></a>
+              <a href="https://www.naver.com"  target="_blank" rel="nooperner noreferrer" alt="네이버 이동" title="네이버로 이동">
+            <img src="/img/naver-logo.png"alt="네이버 이동"/></a>
+    </p>
+    
+    
+    <!--⑥. 파일 다운로드: download 속성(같은 사이트의 파일에서 동작)-->
+    <h2>⑥ 파일 다운로드</h2>
+    <p>
+        <a href="/img/naver-logo.png" download="실습이미지.jpg">실습이미지 다운로드 받기</a>
+        <a href="/html/test01.html" download="장수사과 주문.html">실습 HTML 다운로드 받기</a>
+    </p>
+
+   
+    <!--스크롤 공간 확보-->
+    <div style="height: 800;">아래로 스크롤하세요⬇</div>
+
+    <!--⑦. 맨 위로 이동하기: body태그에 id값 id="top" 적용 후 이동하기-->
+    <p>
+        <a href="#top">▲맨 위로</a>
+    </p>
+
+</body>
+</html>

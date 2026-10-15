@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT 대시보드</title>
+</head>
+<body>
+    <h1>77777IoT 대시보드 - 온도 설정</h1>
+    
+    <label for="temperature">온도 설정 (°C): </label>
+    <input type="number" id="temperature" min="16" max="30" step="0.1" value="22">
+    <button onclick="온도설정()">온도 조정</button>
+    
+    <p>설정된 온도: <span id="currentTemp" style="color:red;">22</span>°C</p>
+
+    <script>
+        function 온도설정() {
+            var temp = document.getElementById('temperature').value;
+            document.getElementById('currentTemp').textContent = temp;
+            alert("온도 " + temp + "°C로 설정되었습니다.");
+        }
+    </script>
+</body>
+</html>
